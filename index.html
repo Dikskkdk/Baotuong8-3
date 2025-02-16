@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Tường 8/3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .article-category {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .article-card {
+            background: #ffe6e6;
+            border: 2px solid #ff99a0;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .article-card h3 {
+            margin: 5px 0;
+        }
+        .article-card a {
+            color: #6a0dad;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .article-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <!-- Tiêu đề trang -->
+    <header>
+        <h1>Báo Tường 8/3 - Vẻ Đẹp Phụ Nữ Việt Nam</h1>
+        <div class="auth-buttons">
+            <button id="open-login">Đăng nhập</button>
+            <button id="logout-btn" style="display: none;">Đăng xuất</button>
+        </div>
+    </header>
+
+    <!-- Popup Đăng nhập/Đăng ký -->
+    <div id="auth-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h2 id="auth-title">Đăng nhập</h2>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Mật khẩu" required>
+            <button id="auth-action">Đăng nhập</button>
+            <p id="toggle-auth">Chưa có tài khoản? <span>Đăng ký</span></p>
+            <button id="close-popup">X</button>
+        </div>
+    </div>
+
+    <!-- Nội dung chính -->
+    <main>
+        <section class="intro">
+            <h2>Chào mừng ngày Quốc tế Phụ nữ 8/3</h2>
+            <p>Ngày Quốc tế Phụ nữ 8/3 không chỉ là ngày tôn vinh phái đẹp, mà còn là dịp để ghi nhớ những nỗ lực, cống hiến và quyền bình đẳng của phụ nữ trên toàn thế giới...</p>
+        </section>
+
+        <!-- Phần Bài Viết -->
+        <section class="articles">
+            <h2>📌 Các Bài Viết</h2>
+
+            <!-- Mục Thế giới -->
+            <h3 class="article-category">🌍 Thế giới</h3>
+            <div class="article-card">
+                <h3><a href="baiviet3.html"><strong>Ngày Quốc tế Phụ nữ 8/3</strong></a></h3>
+                <p>Ngày 8/3 hằng năm, cả thế giới cùng nhau tôn vinh...</p>
+            </div>
+
+            <!-- Mục Việt Nam -->
+            <h3 class="article-category"> 🇻🇳 Việt Nam</h3>
+            <div class="article-card">
+                <h3><a href="baiviet1.html"><strong>Câu chuyện về người mẹ Việt Nam</strong></a></h3>
+                <p>Mẹ là người phụ nữ tuyệt vời nhất...</p>
+            </div>
+
+            <div class="article-card">
+                <h3><a href="baiviet2.html"><strong>Phụ nữ trong lịch sử Việt Nam</strong></a></h3>
+                <p>Những nữ anh hùng đã làm rạng danh dân tộc...</p>
+            </div>
+        </section>
+
+        <!-- Phần Âm Nhạc -->
+        <section class="media">
+            <h2>🎵 Góc Âm Nhạc</h2>
+            <audio controls>
+                <source src="nhac.mp3" type="audio/mpeg">
+                Trình duyệt của bạn không hỗ trợ phát nhạc.
+            </audio>
+            <p>Tên bài hát: Run The World (Girls)</p>
+        </section>
+
+        <!-- Phần Bình Luận -->
+        <section class="comments">
+            <h2>💬 Góc Bình Luận</h2>
+            <form id="comment-form">
+                <textarea id="comment" placeholder="Viết cảm nghĩ của bạn..." required></textarea>
+                <button type="submit">Gửi</button>
+            </form>
+            <div id="comment-list"></div>
+        </section>
+    </main>
+
+    <!-- Chân trang -->
+    <footer>
+        <p>Nhóm thực hiện: Nhóm 5 - Lớp 12/7</p>
+        <p>Email liên hệ: mn4018300@gmail.com</p>
+        <p>&copy; 2025 Báo Tường 8/3</p>
+    </footer>
+
+    <!-- Import script -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
